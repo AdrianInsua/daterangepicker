@@ -1140,7 +1140,7 @@
             if (
                 // ie modal dialog fix
                 e.type == "focusin" ||
-                target.closest('.calendar-zone') ||
+                target.closest('.calendar-zone').length ||
                 target.closest(this.element).length ||
                 target.closest(this.container).length ||
                 target.closest('.calendar-table').length
