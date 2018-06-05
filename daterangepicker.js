@@ -1137,6 +1137,7 @@
             var target = $(e.target);
             // if the page is clicked anywhere except within the daterangerpicker/button
             // itself then call this.hide()
+            console.log(target);
             if (
                 // ie modal dialog fix
                 e.type == "focusin" ||
