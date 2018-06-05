@@ -1137,11 +1137,10 @@
             var target = $(e.target);
             // if the page is clicked anywhere except within the daterangerpicker/button
             // itself then call this.hide()
-            console.log(target);
             if (
                 // ie modal dialog fix
                 e.type == "focusin" ||
-                target.hasClass('.calendar-zone') ||
+                target.closest('.calendar-zone') ||
                 target.closest(this.element).length ||
                 target.closest(this.container).length ||
                 target.closest('.calendar-table').length
